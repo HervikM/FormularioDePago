@@ -1,0 +1,10 @@
+.header{
+   padding: 0;
+   text-align: center;
+   margin-block-end: 1.5rem;
+}
+
+.tittle-header{
+   font: var(--heading1);
+   margin: 0;
+}

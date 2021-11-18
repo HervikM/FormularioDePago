@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+  <title>Formulario de pagos</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container-formulario">
+
+      <header class="header">
+        <img class="logo-header" src="images/Logo.png" width="48" height="48" alt="Logo">
+        <h1 class="tittle-header"> Información de pago</h1>
+      </header>
+      <form method="post" action="#" class="formulario">
+
+        <div class="input input-name">
+          <label for="name">Nombre completo</label>
+          <input type="text" name="txtname" id="name" placeholder="Hervik Moraga" maxlength="100" required>
+        </div>
+
+        <div class="inputs-disable" aria-selected="true">
+          <div class="input disable input-targetNum">
+            <label for="name">Número de Tarjeta de Crédito</label>
+            <input type="text" name="txtname" id="card-credit" placeholder="1234 1234 1234 1234" maxlength="19"
+              max="19" required disabled>
+            <i class="credit-card  far fa-credit-card"></i>
+          </div>
+
+          <div class=" disable inputs-date-cvv">
+            <div class="input input-date">
+              <label for="name">Fecha vencimiento</label>
+              <input type="text" name="txtname" id="date" placeholder="MM/YY" maxlength="5" required disabled>
+            </div>
+
+            <div class="disable input input-cvv">
+              <label for="name">CVV</label>
+              <input type="text" name="txtname" id="cvv" placeholder="•••" maxlength="3" required disabled>
+              <i class="lock fas fa-lock"></i>
+            </div>
+          </div>
+
+
+          <div class="disable input input-address">
+            <label for="name">Dirección</label>
+            <input type="text" name="txtname" id="address" placeholder="Av.morelos #123" maxlength="100" required
+              disabled>
+          </div>
+
+          <div class=" disable input input-button">
+            <input type="submit" name="btnsubmit" id="btn" class="btn-submit" value="Confirmar pago" disabled>
+            <p>Verificas que esta información es correcta</p>
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

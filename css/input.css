@@ -1,0 +1,90 @@
+.input{
+   /* border: 1px solid red; */
+   /* inline-size: 100%; */
+   inline-size: 18.75rem;
+   block-size: 4.3125rem;
+   font: var(--text1regular);
+   margin-block-start: .8rem;
+   position: relative;
+}
+.input:nth-of-type(1)
+{
+   margin-block-start: 0;
+}
+
+.inputs-date-cvv{
+   /* border: 1px solid red; */
+   display: flex;
+   margin-block-start: .8rem;
+   gap: 12px;
+}
+
+.input-targetNum{
+   padding-block-start: 10px;
+}
+
+.input-date,
+.input-cvv{
+   overflow: hidden;
+   margin: 0;
+   inline-size: 9rem;
+   /* border: 1px solid red; */
+}
+
+
+.input input{
+   inline-size: 100%;
+   block-size: 2.5rem ;
+   background: #FFFFFF;
+   border: 1px solid #E2E6EE;
+   box-sizing: border-box;
+   /* box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31); */
+   border-radius: 10px;
+   outline: none;
+   padding-block: .6562rem;
+   padding-inline:.75rem ;
+   margin-block-start:10px ;
+}
+
+
+.input p{
+   font: var(--text2regular);
+   text-align: center;
+}
+
+input::placeholder, .input i{
+   color: var(--grey);
+}
+
+input[type="submit"]{
+   background: var(--primary);
+   color: var(--white);
+   cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input i{
+   z-index: 200;
+   position: absolute;
+   top: 42px;
+   right: 10px;
+}
+.input .credit-card{
+   top: 50px;
+   right: 10px;
+}
+
+
+input:disabled{
+   background: var(--grey2);
+}
+
+input[type="submit"]:disabled{
+   opacity:.2 ;
+   background: var(--primary);
+}
